@@ -1,0 +1,21 @@
+[project]
+name = "vpn-benchmark"
+version = "0.1.0"
+description = "Command-line utility to benchmark VPN performance using macOS networkQuality."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+authors = [{ name = "Drew Todd", email = "drew@drewtodd.com" }]
+
+[project.scripts]
+vpn-benchmark = "vpn_benchmark:main"
+
+[project.urls]
+Homepage = "https://github.com/drewtodd/vpn-benchmark"
+Repository = "https://github.com/drewtodd/vpn-benchmark"
+
+[dependency-groups]
+dev = [
+    "black>=25.9.0",
+    "ruff>=0.14.2",
+]
